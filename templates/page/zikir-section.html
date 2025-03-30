@@ -1,0 +1,211 @@
+<!-- Initialization and Header Inclusion -->
+{% set expected_tag_page = 6 %}
+{% if expected_tag_page != tag_page %}
+    <script>
+        // Redirect to an error page using JavaScript if the condition is not met
+        window.location.href = '/error-display';
+    </script>
+{% endif %}
+{% include 'component/part.header-page.html' %}  
+<!-- Body Attributes -->
+<body oncontextmenu="return false;" class="d-flex flex-column min-vh-100 bg-white">
+    <!-- Menu -->
+    {% include 'component/part.menu-page.html' %} 
+    <!-- Section 1 -->
+    <div id="section1"><br><br><br>
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Menghidupkan Hati dengan Zikir</h1><br>
+        <p class="lead fs-2 text-start" data-aos="fade-up">Setiap insan memerlukan ketenangan dan kekuatan dalam menjalani kehidupan seharian. Zikir bukan sekadar lafaz di bibir, tetapi <span class="fw-semibold">amalan yang menghubungkan hati dengan Allah SWT</span>. Dengan mengingati-Nya, jiwa menjadi tenang, kehidupan diberkati, dan dosa diampuni. <span class="fw-semibold">Setiap lafaz zikir membawa keberkatan serta menjadi benteng daripada godaan syaitan</span>.</p><br><br>
+        <div class="card" data-aos="zoom-in">
+            <img src="static/asset/image/indra-projects-FRgzOVP501E-unsplash.jpg" draggable="false" class="card-img-top img-fluid rounded shadow pe-none img-bg" alt="Zikir_background" id="image-zikir" name="image-zikir" title="" aria-label="Zikir_background">
+        </div><br><br><br>
+    </div>
+    <!-- Section 2 -->
+    <div id="section2">
+        <h1 class="unique-text display-3 lead text-success1" data-aos="fade-up">Keajaiban Zikir dalam Kehidupan</h1><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"(Iaitu) orang-orang yang beriman dan hati mereka menjadi tenteram dengan mengingati Allah. Ingatlah, hanya dengan mengingati Allah hati menjadi tenteram."<p></p><span class="lead fw-medium">(Surah Al-Ra’d 13:28)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Wahai orang-orang yang beriman! Ingatlah Allah dengan sebanyak-banyaknya, serta bertasbihlah kepada-Nya pada waktu pagi dan petang."<p></p><span class="lead fw-medium">(Surah Al-Ahzab 33:41-42)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Maka ingatlah kepada-Ku, nescaya Aku akan mengingatimu. Bersyukurlah kepada-Ku, dan janganlah kamu kufur terhadap-Ku."<p></p><span class="lead fw-medium">(Surah Al-Baqarah 2:152)</span></p>
+            </div>
+        </div><br><br><br>
+    </div>
+    <!-- Section 3 -->
+    <div id="section3">
+        <h2 class="fw-semibold text-success1" data-aos="fade-up">Marilah Kita Menghayati Keindahan Zikir,<br><span class="unique-text display-3 text-success1" data-aos="fade-up">Demi Mencapai Rahmat Dan Kasih Sayang Allah SWT</span></h2><br><p></p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold fs-5 active" id="first-tab" name="first-tab" data-bs-toggle="tab" data-bs-target="#first-tab-pane" type="button" role="tab" aria-controls="first-tab-pane" aria-selected="true" tabindex="8">Jenis-Jenis Zikir</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="first-tab-pane" role="tabpanel" aria-labelledby="first-tab"><br>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center"><br>
+                                <h1 class="card-text text-success1 fw-semibold">Tasbih</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model1" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewZikir" id="viewZikir" title="" aria-label="Lihat Perincian Ayat" tabindex="9">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center"><br>
+                                <h1 class="card-text text-success1 fw-semibold">Tahmid</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model2" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewZikir" id="viewZikir" title="" aria-label="Lihat Perincian Ayat" tabindex="10">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center"><br>
+                                <h1 class="card-text text-success1 fw-semibold">Takbir</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model3" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewZikir" id="viewZikir" title="" aria-label="Lihat Perincian Ayat" tabindex="11">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center"><br>
+                                <h1 class="card-text text-success1 fw-semibold">Tahlil</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model4" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewZikir" id="viewZikir" title="" aria-label="Lihat Perincian Ayat" tabindex="12">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center"><br>
+                                <h1 class="card-text text-success1 fw-semibold">Hawqolah</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model5" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewZikir" id="viewZikir" title="" aria-label="Lihat Perincian Ayat" tabindex="13">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><p></p>
+        <!-- Modal - Kategori 1 -->
+        <div class="modal fade" id="category-model1" tabindex="-1" aria-labelledby="category-model1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model1">Tasbih</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">سُبْحَانَ ٱللَّٰهِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Maha Suci Allah</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 2 -->
+        <div class="modal fade" id="category-model2" tabindex="-1" aria-labelledby="category-model2" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model2">Tahmid</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">اَلْحَمْدُ للَّهِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Segala Puji Bagi Allah</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 3 -->
+        <div class="modal fade" id="category-model3" tabindex="-1" aria-labelledby="category-model3" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model3">Takbir</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">اللهُ أكْبَرُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Allah Maha Besar</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 4 -->
+        <div class="modal fade" id="category-model4" tabindex="-1" aria-labelledby="category-model4" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model4">Tahlil</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">لا إله إلاّ الله</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Tiada Tuhan Selain Allah</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 5 -->
+        <div class="modal fade" id="category-model5" tabindex="-1" aria-labelledby="category-model5" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model5">Hawqolah</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Tidak Ada Daya Dan Kekuatan Kecuali Daya Dan Kekuatan Dari Allah</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section 4 -->
+    <div id="section4"><br><hr><br><br>
+        <div class="text-center fw-medium fs-6">
+            <a id="info" name="info" class="title text-decoration-none" href="static/asset/doc/user_manual.pdf" title="" aria-label="Sila muat turun Infografik Sistem (Ringkasan)" tabindex="14" rel="noopener noreferrer" target="_self" download="user_manual.pdf">Infografik Qalb-i</a><br>
+            <p id="copyrightText" class="mt-3 mb-3">Qalb-i Versi 1.0.0 Beta | Kemaskini terakhir: April 2025<p></p>Hak Cipta Terpelihara &copy; <span id="copyYear"></span> Muhammad Aizat Bin Rasee, <a href="https://www.linkedin.com/in/muhammad-aizat-bin-rasee-58435b178/" class="text-decoration-none" id="linkedin" name="linkedin" tabindex="15" title="" aria-label="Lihat profil pengasas di LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a><p></p>Founder and Fullstack Software Developer of Qalb-i</p>   
+            <p id="copyrightText" class="mt-3 mb-3">
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i1" name="i1" title="" aria-label="Peta Laman" tabindex="16" rel="noopener noreferrer" target="_blank">Peta Laman</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i2" name="i2" title="" aria-label="Pusat Bantuan" tabindex="17" rel="noopener noreferrer" target="_blank">Pusat Bantuan</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i3" name="i3" title="" aria-label="Dokumen Panduan" tabindex="18" rel="noopener noreferrer" target="_blank">Dokumen Panduan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i4" name="i4" title="" aria-label="Terma Perkhidmatan" tabindex="19" rel="noopener noreferrer" target="_blank">Terma Perkhidmatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i5" name="i5" title="" aria-label="Dasar Privasi" tabindex="20" rel="noopener noreferrer" target="_blank">Dasar Privasi</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i6" name="i6" title="" aria-label="Dasar Keselamatan" tabindex="21" rel="noopener noreferrer" target="_blank">Dasar Keselamatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i7" name="i7" title="" aria-label="Penafian" tabindex="22" rel="noopener noreferrer" target="_blank">Penafian</a>
+            </p><br>
+            <p id="copyrightText">Untuk pengalaman paparan terbaik, gunakan resolusi skrin minimum 1920x1080 pada pelayar web Mozilla Firefox, Microsoft Edge, atau Google Chrome versi terkini.</p><br>        
+        </div> 
+    </div>
+    <!-- Footer Inclusion -->
+    {% include 'component/part.footer-page.html' %}
+</body>
+</html>

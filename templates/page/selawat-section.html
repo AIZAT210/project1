@@ -1,0 +1,161 @@
+<!-- Initialization and Header Inclusion -->
+{% set expected_tag_page = 4 %}
+{% if expected_tag_page != tag_page %}
+    <script>
+        // Redirect to an error page using JavaScript if the condition is not met
+        window.location.href = '/error-display';
+    </script>
+{% endif %}
+{% include 'component/part.header-page.html' %}  
+<!-- Body Attributes -->
+<body oncontextmenu="return false;" class="d-flex flex-column min-vh-100 bg-white">
+    <!-- Menu -->
+    {% include 'component/part.menu-page.html' %} 
+    <!-- Section 1 -->
+    <div id="section1"><br><br><br>
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Indahnya Berselawat: Menghidupkan Cinta kepada Rasulullah ﷺ</h1><br>
+        <p class="lead fs-2 text-start" data-aos="fade-up">Selawat merujuk kepada <span class="fw-semibold">doa, sanjungan, dan penghormatan yang dipanjatkan kepada Nabi Muhammad ﷺ </span>sebagai <span class="fw-semibold">tanda cinta dan penghormatan umat Islam terhadap baginda</span>.</p><br><br><br><br>
+        <p class="lead fs-3 text-body-secondary fw-medium text-center" data-aos="fade-up">"Ya Allah, Limpahkanlah Rahmat Ke Atas Nabi Muhammad SAW"</p><br><br><br>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12 mb-2 mb-lg-0">
+                <div class="alert alert-success" role="alert" data-aos="fade-up">
+                    <span class="lead text-success1 fw-semibold">"Sesungguhnya Allah dan para malaikat-Nya berselawat ke atas Nabi. Wahai orang-orang yang beriman, berselawatlah kamu untuknya serta ucapkanlah salam penghormatan kepadanya."</span><p></p><span class="fw-medium fs-5">(Surah Al-Ahzab: 56)</span>
+                </div>
+                <div class="alert alert-success" role="alert" data-aos="fade-up">
+                    <span class="lead text-success1 fw-semibold">"Barang siapa berselawat ke atasku sekali, maka Allah akan berselawat ke atasnya sepuluh kali."</span><p></p><span class="fw-medium fs-5">(Hadis Riwayat Muslim)</span>
+                </div>
+                <div class="alert alert-success" role="alert" data-aos="fade-up">
+                    <span class="lead text-success1 fw-semibold">"Sebaik-baik manusia di sisiku pada hari kiamat nanti adalah orang yang paling banyak berselawat kepadaku."</span><p></p><span class="fw-medium fs-5">(Hadis Riwayat at-Tirmizi)</span>
+                </div>
+            </div>   
+            <div class="col-lg-6 col-12 text-center text-lg-end" data-aos="zoom-in">
+                <img draggable="false" class="img-fluid rounded shadow pe-none" src="static/asset/image/ryan-pradipta-putra-MWJ7JpFBlGk-unsplash.jpg" alt="Gambar Masjid" id="image-mosque" name="image-mosque" title="" aria-label="Gambar Masjid">
+            </div>
+        </div><br><br>
+    </div>
+    <!-- Section 2 -->
+    <div id="section2">
+        <h2 class="unique-text display-3 text-success1" data-aos="fade-up">Marilah Kita Hidupkan Hati Dengan Selawat Dan Rasai Keindahan Cinta Kepada Nabi Junjungan!</h2><br><p></p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold fs-5 active" id="first-tab" name="first-tab" data-bs-toggle="tab" data-bs-target="#first-tab-pane" type="button" role="tab" aria-controls="first-tab-pane" aria-selected="true" tabindex="8">Jenis-Jenis Selawat</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="first-tab-pane" role="tabpanel" aria-labelledby="first-tab"><br>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-header text-center"><p></p>
+                                <h5 class="card-text text-body-secondary fw-semibold">Tahiyat Akhir Solat</h5><p></p>
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-text text-success1 fw-semibold display-6">Selawat Ibrahimiyyah</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model1" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSelawat" id="viewSelawat" title="" aria-label="Lihat Perincian Ayat" tabindex="9">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-header text-center"><p></p>
+                                <h5 class="card-text text-body-secondary fw-semibold">Pembuka Pintu Rezeki</h5><p></p>
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-text text-success1 fw-semibold display-6">Selawat Tafrijiyyah (Nariyah)</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model2" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSelawat" id="viewSelawat" title="" aria-label="Lihat Perincian Ayat" tabindex="10">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-header text-center"><p></p>
+                                <h5 class="card-text text-body-secondary fw-semibold">Memohon Kesembuhan</h5><p></p>
+                            </div>
+                            <div class="card-body text-center">
+                                <h1 class="card-text text-success1 fw-semibold display-6">Selawat Syifa'</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model3" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSelawat" id="viewSelawat" title="" aria-label="Lihat Perincian Ayat" tabindex="11">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><p></p>
+        <!-- Modal - Kategori 1 -->
+        <div class="modal fade" id="category-model1" tabindex="-1" aria-labelledby="category-model1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model1">Selawat Ibrahimiyyah</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</h1><br>
+                        <h5 class="text-success1 fw-medium text-center">Ya Allah berilah selawat kepada Muhammad dan kepada keluarga Muhammad sebagaimana Engkau telah berselawat kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji (lagi) Maha Mulia. Ya Allah, Berkatilah Muhammad dan keluarga Muhammad sebagaimana Engkau telah memberkati Ibrahim dan keluarga Ibrahim, sesungguhnya Engkau Maha Terpuji (lagi) Maha Mulia.</h5><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 2 -->
+        <div class="modal fade" id="category-model2" tabindex="-1" aria-labelledby="category-model2" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model2">Selawat Tafrijiyyah (Nariyah)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">اَللّٰهُمَّ صَلِّ صَلَاةً كَامِلَةً وَسَلِّمْ سَلَامًا تَامًّا عَلىٰ سَيِّدِنَا مُحَــمَّدِ نِ الَّذِيْ تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ وَتُقْضٰى بِهِ الْحَوَائِجُ وَتُنَالُ بِهِ الرَّغَائِبُ وَحُسْنُ الْخَوَاتِمِ وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيْمِ وَعَلىٰ اٰلِهِ وِصَحْبِهِ فِيْ كُلِّ لَمْحَةٍ وَ نَفَسٍ بِعَدَدِ كُلِّ مَعْلُوْمٍ لَكَ</h1><br>
+                        <h5 class="text-success1 fw-medium text-center">Ya Allah, limpahkanlah selawat dengan selawat yang menyeluruh dan kurniakanlah salam dengan salam yang sempurna ke atas penghulu kami, Nabi Muhammad yang dengannya (selawat itu) dapat merungkai segala ikatan, melepaskan segala kesukaran, melunaskan segala hajat, tercapai segala perkara yang diingini dan kematian yang baik, serta diturunkan hujan (yang menjadi rahmat) disebabkan wajahnya yang mulia. (Begitu juga selawat dan salam ini diberikan) ke atas ahli keluarga Baginda, para sahabatnya di dalam setiap kerdipan mata dan nafas dengan setiap bilangan yang diketahui olehMu.</h5><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 3 -->
+        <div class="modal fade" id="category-model3" tabindex="-1" aria-labelledby="category-model3" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model3">Selawat Syifa'</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ طِبِّ الْقُلُوبِ وَدَوَائِهَا، وَعَافِيَةِ الْأَبْدَانِ وَشِفَائِهَا، وَنُورِ الْأَبْصَارِ وَضِيَائِهَا، وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ</h1><br>
+                        <h5 class="text-success1 fw-medium text-center">Ya Allah, limpahkanlah selawat ke atas penghulu kami, Nabi Muhammad yang merupakan ubat kepada hati-hati manusia dan penawarnya, kesembuhan bagi badan-badan dan penyembuhnya, cahaya segala penglihatan dan sinarannya, (begitu juga selawat ini dilimpahkan) ke atas ahli keluarga baginda, para sahabatnya, serta limpahkanlah kesejahteraan (ke atas mereka).</h5><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section 3 -->
+    <div id="section3"><br><hr><br><br>
+        <div class="text-center fw-medium fs-6">
+            <a id="info" name="info" class="title text-decoration-none" href="static/asset/doc/user_manual.pdf" title="" aria-label="Sila muat turun Infografik Sistem (Ringkasan)" tabindex="12" rel="noopener noreferrer" target="_self" download="user_manual.pdf">Infografik Qalb-i</a><br>
+            <p id="copyrightText" class="mt-3 mb-3">Qalb-i Versi 1.0.0 Beta | Kemaskini terakhir: April 2025<p></p>Hak Cipta Terpelihara &copy; <span id="copyYear"></span> Muhammad Aizat Bin Rasee, <a href="https://www.linkedin.com/in/muhammad-aizat-bin-rasee-58435b178/" class="text-decoration-none" id="linkedin" name="linkedin" tabindex="13" title="" aria-label="Lihat profil pengasas di LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a><p></p>Founder and Fullstack Software Developer of Qalb-i</p>   
+            <p id="copyrightText" class="mt-3 mb-3">
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i1" name="i1" title="" aria-label="Peta Laman" tabindex="14" rel="noopener noreferrer" target="_blank">Peta Laman</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i2" name="i2" title="" aria-label="Pusat Bantuan" tabindex="15" rel="noopener noreferrer" target="_blank">Pusat Bantuan</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i3" name="i3" title="" aria-label="Dokumen Panduan" tabindex="16" rel="noopener noreferrer" target="_blank">Dokumen Panduan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i4" name="i4" title="" aria-label="Terma Perkhidmatan" tabindex="17" rel="noopener noreferrer" target="_blank">Terma Perkhidmatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i5" name="i5" title="" aria-label="Dasar Privasi" tabindex="18" rel="noopener noreferrer" target="_blank">Dasar Privasi</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i6" name="i6" title="" aria-label="Dasar Keselamatan" tabindex="19" rel="noopener noreferrer" target="_blank">Dasar Keselamatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i7" name="i7" title="" aria-label="Penafian" tabindex="20" rel="noopener noreferrer" target="_blank">Penafian</a>
+            </p><br>
+            <p id="copyrightText">Untuk pengalaman paparan terbaik, gunakan resolusi skrin minimum 1920x1080 pada pelayar web Mozilla Firefox, Microsoft Edge, atau Google Chrome versi terkini.</p><br>        
+        </div> 
+    </div>
+    <!-- Footer Inclusion -->
+    {% include 'component/part.footer-page.html' %}
+</body>
+</html>

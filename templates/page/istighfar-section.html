@@ -1,0 +1,183 @@
+<!-- Initialization and Header Inclusion -->
+{% set expected_tag_page = 3 %}
+{% if expected_tag_page != tag_page %}
+    <script>
+        // Redirect to an error page using JavaScript if the condition is not met
+        window.location.href = '/error-display';
+    </script>
+{% endif %}
+{% include 'component/part.header-page.html' %}  
+<!-- Body Attributes -->
+<body oncontextmenu="return false;" class="d-flex flex-column min-vh-100 bg-white">
+    <!-- Menu -->
+    {% include 'component/part.menu-page.html' %} 
+    <!-- Section 1 -->
+    <div id="section1"><br><br><br>
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Pintu Taubat Sentiasa Terbuka</h1><br><br>
+        <div class="row align-items-center"> 
+            <div class="col-lg-6 col-12 mb-2 mb-lg-0" data-aos="fade-up">
+                <p class="lead text-start fs-3"><span class="fw-semibold text-danger">Manusia tidak pernah lari daripada melakukan kesilapan, sama ada secara sedar atau tidak</span>. Namun, <span class="fw-semibold text-success">kasih sayang Allah itu luas dan pintu keampunan-Nya sentiasa terbuka bagi hamba yang ikhlas memohon ampun</span>.</p>
+                <p class="lead text-start fs-3">Istighfar bukan sekadar lafaz di bibir, tetapi ia adalah pengakuan dosa, perasaan rendah hati, dan keinginan untuk memperbaiki diri.</p>
+                <p class="lead text-start fs-3">Dengan beristighfar, hati menjadi lebih tenang, rezeki dipermudahkan, dan kehidupan diberkati.</p>
+            </div>
+            <div class="col-lg-6 col-12 text-center text-lg-end" data-aos="zoom-in">
+                <img draggable="false" class="img-fluid rounded shadow pe-none" src="static/asset/image/christopher-catbagan-GJsyfWI2XQ0-unsplash.jpg" alt="Gambar Penyesalan" id="image-sad" name="image-sad" title="" aria-label="Gambar Penyesalan">
+            </div>
+        </div><br><br><br><br>
+        <p class="lead fs-2 text-start" data-aos="fade-up">Memohon <span class="fw-semibold">keampunan daripada Allah SWT</span> atas segala <span class="fw-semibold">dosa dan kesilapan yang telah dilakukan</span> dengan penuh <span class="fw-semibold">kerendahan hati dan penyesalan</span>.</p><br>
+        <p class="lead fs-2 text-start" data-aos="fade-up"><span class="fw-semibold">Keampunan Allah SWT hadir melalui taubat dan istighfar</span>, dua amalan yang saling melengkapi dalam meraih rahmat dan pengampunan-Nya.</p><br><br><br>
+    </div>
+    <!-- Section 2 -->
+    <div id="section2">
+        <div>
+            <h1 class="unique-text text-success1 display-3" data-aos="fade-up">Keampunan Ilahi: Bukti Cinta Allah kepada Hamba-Nya</h1><br>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Demi Allah! Sesungguhnya aku beristighfar dan bertaubat kepada Allah lebih dari 70 kali dalam sehari."<p></p><span class="lead fw-medium">(Hadis Riwayat Muslim)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Barang siapa memperbanyak istighfar, Allah akan menjadikan untuknya jalan keluar dari setiap kesulitan, memberikan rezeki dari arah yang tidak disangka-sangka."<p></p><span class="lead fw-medium">(Hadis Riwayat Abu Dawud dan Tirmidzi)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Maka aku berkata (kepada mereka): 'Mohonlah ampun kepada Tuhanmu, sesungguhnya Dia Maha Pengampun. Nescaya Dia akan menurunkan hujan yang lebat kepadamu, dan Dia akan memperbanyakkan harta serta anak-anakmu, serta mengadakan kebun-kebun dan sungai-sungai untukmu."<p></p><span class="lead fw-medium">(Surah Nuh 71:10-12)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Dan (juga) orang-orang yang apabila melakukan perbuatan keji atau menzalimi diri sendiri, segera mengingati Allah lalu memohon ampun atas dosa-dosa mereka. Dan siapakah yang dapat mengampuni dosa selain Allah? Dan mereka tidak meneruskan dosa itu, sedang mereka mengetahui."<p></p><span class="lead fw-medium">(Surah Ali ‘Imran 3:135)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Katakanlah (wahai Muhammad): Wahai hamba-hamba-Ku yang melampaui batas terhadap diri mereka sendiri! Janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni segala dosa. Sesungguhnya Dia-lah Yang Maha Pengampun lagi Maha Penyayang."<p></p><span class="lead fw-medium">(Surah Az-Zumar 39:53)</span></p>
+            </div>
+        </div><br><br><br>
+        <div class="card" data-aos="zoom-in">
+            <img src="static/asset/image/masjid-maba-vLk55UWfFdk-unsplash.jpg" draggable="false" class="card-img-top img-fluid rounded shadow pe-none img-bg" alt="Memohon kemaafan daripada sesama insan" id="image-peace" name="image-peace" title="" aria-label="Memohon kemaafan daripada sesama insan.">
+        </div><br><br><br>
+    </div>
+    <!-- Section 3 -->
+    <div id="section3">
+        <h2 class="unique-text display-3 text-success1" data-aos="fade-up">Mari Hayati Keindahan Istighfar Dan Jadikan Ia Amalan Harian Dalam Perjalanan Kita Menuju Reda Ilahi!</h2><br><p></p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold fs-5 active" id="first-tab" name="first-tab" data-bs-toggle="tab" data-bs-target="#first-tab-pane" type="button" role="tab" aria-controls="first-tab-pane" aria-selected="true" tabindex="8">Jenis-Jenis Istighfar</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="first-tab-pane" role="tabpanel" aria-labelledby="first-tab"><br>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body text-center"><br>
+                                <h2 class="card-text text-success1 fw-semibold">Lafaz Istigfar (Umum)</h2><br>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model1" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewIstighfar" id="viewIstighfar" title="" aria-label="Lihat Perincian Ayat" tabindex="9">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body text-center"><br>
+                                <h2 class="card-text text-success1 fw-semibold">Lafaz Istigfar Ketika Bersurai Daripada Majlis</h2><br>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model2" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewIstighfar" id="viewIstighfar" title="" aria-label="Lihat Perincian Ayat" tabindex="10">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body text-center"><br>
+                                <h2 class="card-text text-success1 fw-semibold">Saiyidul Istigfar (Penghulu Istigfar)</h2><br>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model3" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewIstighfar" id="viewIstighfar" title="" aria-label="Lihat Perincian Ayat" tabindex="11">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><p></p>
+        <!-- Modal - Kategori 1 -->
+        <div class="modal fade" id="category-model1" tabindex="-1" aria-labelledby="category-model1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model1">Lafaz Istigfar (Umum)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْه</h1><br>
+                        <h5 class="text-success1 fw-medium text-center">Aku memohon ampun kepada Allah yang tidak ada tuhan selain Dia, yang hidup dan berdiri sendiri dan aku bertaubat kepada-Nya.</h5><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 2 -->
+        <div class="modal fade" id="category-model2" tabindex="-1" aria-labelledby="category-model2" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model2">Lafaz Istigfar Ketika Bersurai Daripada Majlis</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ</h1><br>
+                        <h5 class="text-success1 fw-medium text-center">Maha Suci Engkau, ya Allah dan puja puji untuk-Mu. Aku naik saksi tiada tuhan selain Engkau. Aku memohon keampunan daripada-Mu dan bertaubat kepada-Mu.</h5><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - Kategori 3 -->
+        <div class="modal fade" id="category-model3" tabindex="-1" aria-labelledby="category-model3" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model3">Saiyidul Istigfar (Penghulu Istigfar)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">اللّٰهُمَّ أَنْتَ رَبِّي، لَا إِلٰهَ إِلَّا أَنْتَ، خَلَقْتَنِيْ وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَىَّ وَأَبُوءُ لَكَ بِذَنْبِيْ، فَاغْفِرْ لِيْ، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّاأَنْتَ۔</h1><br>
+                        <h5 class="text-success1 fw-medium text-center">Ya Allah, Engkaulah Tuhanku, tiada tuhan yang disembah melainkan Engkau. Engkau telah menjadikan aku, dan aku ialah hamba Mu, aku tetap atas amanah-Mu dan janji-Mu sekadar kesanggupan. Aku berlindung dengan-Mu daripada kejahatan yang telah aku lakukan. Aku mengakui kepada-Mu dengan nikmatMu ke atasku dan aku mengakui dosaku. Maka ampunilah aku, maka sesungguhnya tiada siapa yang dapat mengampuni dosa-dosaku selain Engkau.</h5><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section 4 -->
+    <div id="section4"><br><hr><br><br>
+        <div class="text-center fw-medium fs-6">
+            <a id="info" name="info" class="title text-decoration-none" href="static/asset/doc/user_manual.pdf" title="" aria-label="Sila muat turun Infografik Sistem (Ringkasan)" tabindex="12" rel="noopener noreferrer" target="_self" download="user_manual.pdf">Infografik Qalb-i</a><br>
+            <p id="copyrightText" class="mt-3 mb-3">Qalb-i Versi 1.0.0 Beta | Kemaskini terakhir: April 2025<p></p>Hak Cipta Terpelihara &copy; <span id="copyYear"></span> Muhammad Aizat Bin Rasee, <a href="https://www.linkedin.com/in/muhammad-aizat-bin-rasee-58435b178/" class="text-decoration-none" id="linkedin" name="linkedin" tabindex="13" title="" aria-label="Lihat profil pengasas di LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a><p></p>Founder and Fullstack Software Developer of Qalb-i</p>   
+            <p id="copyrightText" class="mt-3 mb-3">
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i1" name="i1" title="" aria-label="Peta Laman" tabindex="14" rel="noopener noreferrer" target="_blank">Peta Laman</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i2" name="i2" title="" aria-label="Pusat Bantuan" tabindex="15" rel="noopener noreferrer" target="_blank">Pusat Bantuan</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i3" name="i3" title="" aria-label="Dokumen Panduan" tabindex="16" rel="noopener noreferrer" target="_blank">Dokumen Panduan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i4" name="i4" title="" aria-label="Terma Perkhidmatan" tabindex="17" rel="noopener noreferrer" target="_blank">Terma Perkhidmatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i5" name="i5" title="" aria-label="Dasar Privasi" tabindex="18" rel="noopener noreferrer" target="_blank">Dasar Privasi</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i6" name="i6" title="" aria-label="Dasar Keselamatan" tabindex="19" rel="noopener noreferrer" target="_blank">Dasar Keselamatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i7" name="i7" title="" aria-label="Penafian" tabindex="20" rel="noopener noreferrer" target="_blank">Penafian</a>
+            </p><br>
+            <p id="copyrightText">Untuk pengalaman paparan terbaik, gunakan resolusi skrin minimum 1920x1080 pada pelayar web Mozilla Firefox, Microsoft Edge, atau Google Chrome versi terkini.</p><br>        
+        </div> 
+    </div>
+    <!-- Footer Inclusion -->
+    {% include 'component/part.footer-page.html' %}
+</body>
+</html>

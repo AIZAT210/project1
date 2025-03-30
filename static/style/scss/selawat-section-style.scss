@@ -1,0 +1,99 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Cormorant+Garamond:wght@700&display=swap");
+
+/* Variables */
+$primary-color: #00712D;
+$secondary-color: #076452;
+$accent-color: #CBA35C;
+$light-bg: #F9F8EB;
+$shadow-color: rgba(0, 0, 0, 0.3);
+
+/* Mixins */
+@mixin smooth-transition($time: 0.4s) {
+    transition: all $time cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Global Styles */
+html, body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: $light-bg;
+}
+
+/* Scrollbar Customization */
+html {
+    scroll-behavior: smooth;
+    
+    &::-webkit-scrollbar {
+        width: 0.6em;
+        background-color: #dcdde1;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $accent-color;
+        border-radius: 2.5em;
+    }
+}
+
+/* Project Title */
+.title-project {
+    color: $secondary-color;
+    text-shadow: 2px 2px 5px #ffcc01;
+}
+
+/* Sections */
+$sections: section1, section2, section3;
+
+@each $section in $sections {
+    ##{$section} {
+        padding: 4em;
+    }
+}
+
+#section3 {
+    padding: 2em;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: $primary-color;
+}
+
+.modal-body {
+    padding: 4em;
+}
+
+/* Text Styles */
+.text-success1 {
+    color: #0F693F;
+}
+
+.unique-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic; 
+}
+
+/* Card Styling */
+.card-hover {
+    @include smooth-transition(0.4s);
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px $shadow-color;
+    }
+}
+
+.card-bg {
+    background-color: $light-bg;
+}
+
+.card-footer {
+    background-color: #DFF3E3;
+}

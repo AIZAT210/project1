@@ -1,0 +1,199 @@
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <!-- Tippy JS -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <!-- Boxicons JS -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Custom JavaScript -->
+    {% if tag_page == 1 %}
+        <script src="static/script/typescript/index-function.js" defer></script>
+        <script>
+            const tooltips1 = [
+                { selector: '#chevrons-icon', content: 'Jelajahi Bacaan Penuh', placement: 'right-end' },
+                { selector: '#intro', content: 'Mendapatkan Maklumat Lanjut Tentang Qalb-i', placement: 'bottom' },
+                { selector: '#doa-section', content: 'Pengenalan Doa', placement: 'bottom' },
+                { selector: '#zikir-section', content: 'Pengenalan Zikir', placement: 'bottom' },
+                { selector: '#istighfar-section', content: 'Pengenalan Istighfar', placement: 'bottom' },
+                { selector: '#selawat-section', content: 'Pengenalan Selawat', placement: 'bottom' },
+                { selector: '#surah-section', content: 'Pengenalan Surah Atau Ayat Pilihan', placement: 'bottom' },
+                { selector: '#Inspiration1', content: 'Layari Laman Web Rasmi Mufti Wilayah Persekutuan', placement: 'top' },
+                { selector: '#Inspiration2', content: 'Layari Laman Web Rasmi Waktu Solat Digital', placement: 'top' },
+                { selector: '#Inspiration3', content: 'Dapatkan Buku Indahnya Hidup Bersyariat', placement: 'top' },
+                { selector: '#info', content: 'Muat Turun Infografik Qalb-i', placement: 'top' },
+                { selector: '#linkedin', content: 'Lihat Profil Pengasas', placement: 'right-end' },
+                { selector: '#i1', content: 'Peta Laman', placement: 'bottom' },
+                { selector: '#i2', content: 'Pusat Bantuan', placement: 'bottom' },
+                { selector: '#i3', content: 'Dokumen Panduan', placement: 'bottom' },
+                { selector: '#i4', content: 'Terma Perkhidmatan', placement: 'bottom' },
+                { selector: '#i5', content: 'Dasar Privasi', placement: 'bottom' },
+                { selector: '#i6', content: 'Dasar Keselamatan', placement: 'bottom' },
+                { selector: '#i7', content: 'Penafian', placement: 'bottom' }
+            ];
+            tooltips1.forEach(({ selector, content, placement }) => {
+                tippy(selector, {
+                    content,
+                    placement
+                });
+            });
+        </script>
+    {% elif tag_page == 2 %}
+        <script src="static/script/typescript/doa-section-function.js" defer></script>
+        <script>
+            const tooltips2 = [
+                { selector: '#main-page', content: 'Halaman Utama Qalb-i', placement: 'bottom' },
+                { selector: '#doa-page', content: 'Halaman Doa', placement: 'bottom' },
+                { selector: '#zikir-page', content: 'Halaman Zikir', placement: 'bottom' },
+                { selector: '#istighfar-page', content: 'Halaman Istighfar', placement: 'bottom' },
+                { selector: '#selawat-page', content: 'Halaman Selawat', placement: 'bottom' },
+                { selector: '#surah-page', content: 'Halaman Surah Atau Ayat Pilihan', placement: 'bottom' },
+                { selector: '#prayerKeyword', content: 'Masukkan Kata Kunci', placement: 'top' },
+                { selector: '#submit', content: 'Carian Doa Yang Anda Ingini', placement: 'top' },
+                { selector: '#first-tab', content: 'Lihat Senarai Doa Berdasarkan Kategori', placement: 'bottom' },
+                { selector: '#second-tab', content: 'Lihat Senarai Doa Secara Keseluruhan', placement: 'bottom' },
+                { selector: '#viewDoa', content: 'Lihat Senarai Doa Bagi Kategori Ini', placement: 'bottom' },
+                { selector: '#info', content: 'Muat Turun Infografik Qalb-i', placement: 'top' },
+                { selector: '#linkedin', content: 'Lihat Profil Pengasas', placement: 'right-end' },
+                { selector: '#i1', content: 'Peta Laman', placement: 'bottom' },
+                { selector: '#i2', content: 'Pusat Bantuan', placement: 'bottom' },
+                { selector: '#i3', content: 'Dokumen Panduan', placement: 'bottom' },
+                { selector: '#i4', content: 'Terma Perkhidmatan', placement: 'bottom' },
+                { selector: '#i5', content: 'Dasar Privasi', placement: 'bottom' },
+                { selector: '#i6', content: 'Dasar Keselamatan', placement: 'bottom' },
+                { selector: '#i7', content: 'Penafian', placement: 'bottom' }
+            ];
+            tooltips2.forEach(({ selector, content, placement }) => {
+                tippy(selector, {
+                    content,
+                    placement
+                });
+            });
+        </script>
+    {% elif tag_page == 3 %}
+        <script src="static/script/typescript/istighfar-section-function.js" defer></script>
+        <script>
+            const tooltips3 = [
+                { selector: '#main-page', content: 'Halaman Utama Qalb-i', placement: 'bottom' },
+                { selector: '#doa-page', content: 'Halaman Doa', placement: 'bottom' },
+                { selector: '#zikir-page', content: 'Halaman Zikir', placement: 'bottom' },
+                { selector: '#istighfar-page', content: 'Halaman Istighfar', placement: 'bottom' },
+                { selector: '#selawat-page', content: 'Halaman Selawat', placement: 'bottom' },
+                { selector: '#surah-page', content: 'Halaman Surah Atau Ayat Pilihan', placement: 'bottom' },
+                { selector: '#first-tab', content: 'Lihat Senarai Istighfar', placement: 'bottom' },
+                { selector: '#viewIstighfar', content: 'Lihat Perincian Ayat Bagi Istighfar Ini', placement: 'bottom' },
+                { selector: '#info', content: 'Muat Turun Infografik Qalb-i', placement: 'top' },
+                { selector: '#linkedin', content: 'Lihat Profil Pengasas', placement: 'right-end' },
+                { selector: '#i1', content: 'Peta Laman', placement: 'bottom' },
+                { selector: '#i2', content: 'Pusat Bantuan', placement: 'bottom' },
+                { selector: '#i3', content: 'Dokumen Panduan', placement: 'bottom' },
+                { selector: '#i4', content: 'Terma Perkhidmatan', placement: 'bottom' },
+                { selector: '#i5', content: 'Dasar Privasi', placement: 'bottom' },
+                { selector: '#i6', content: 'Dasar Keselamatan', placement: 'bottom' },
+                { selector: '#i7', content: 'Penafian', placement: 'bottom' }
+            ];
+            tooltips3.forEach(({ selector, content, placement }) => {
+                tippy(selector, {
+                    content,
+                    placement
+                });
+            });
+        </script>
+    {% elif tag_page == 4 %}
+        <script src="static/script/typescript/selawat-section-function.js" defer></script>
+        <script>
+            const tooltips4 = [
+                { selector: '#main-page', content: 'Halaman Utama Qalb-i', placement: 'bottom' },
+                { selector: '#doa-page', content: 'Halaman Doa', placement: 'bottom' },
+                { selector: '#zikir-page', content: 'Halaman Zikir', placement: 'bottom' },
+                { selector: '#istighfar-page', content: 'Halaman Istighfar', placement: 'bottom' },
+                { selector: '#selawat-page', content: 'Halaman Selawat', placement: 'bottom' },
+                { selector: '#surah-page', content: 'Halaman Surah Atau Ayat Pilihan', placement: 'bottom' },
+                { selector: '#first-tab', content: 'Lihat Senarai Selawat', placement: 'bottom' },
+                { selector: '#viewSelawat', content: 'Lihat Perincian Ayat Bagi Selawat Ini', placement: 'bottom' },
+                { selector: '#info', content: 'Muat Turun Infografik Qalb-i', placement: 'top' },
+                { selector: '#linkedin', content: 'Lihat Profil Pengasas', placement: 'right-end' },
+                { selector: '#i1', content: 'Peta Laman', placement: 'bottom' },
+                { selector: '#i2', content: 'Pusat Bantuan', placement: 'bottom' },
+                { selector: '#i3', content: 'Dokumen Panduan', placement: 'bottom' },
+                { selector: '#i4', content: 'Terma Perkhidmatan', placement: 'bottom' },
+                { selector: '#i5', content: 'Dasar Privasi', placement: 'bottom' },
+                { selector: '#i6', content: 'Dasar Keselamatan', placement: 'bottom' },
+                { selector: '#i7', content: 'Penafian', placement: 'bottom' }
+            ];
+            tooltips4.forEach(({ selector, content, placement }) => {
+                tippy(selector, {
+                    content,
+                    placement
+                });
+            });
+        </script>
+    {% elif tag_page == 5 %}
+        <script src="static/script/typescript/surah-section-function.js" defer></script>
+        <script>
+            const tooltips5 = [
+                { selector: '#main-page', content: 'Halaman Utama Qalb-i', placement: 'bottom' },
+                { selector: '#doa-page', content: 'Halaman Doa', placement: 'bottom' },
+                { selector: '#zikir-page', content: 'Halaman Zikir', placement: 'bottom' },
+                { selector: '#istighfar-page', content: 'Halaman Istighfar', placement: 'bottom' },
+                { selector: '#selawat-page', content: 'Halaman Selawat', placement: 'bottom' },
+                { selector: '#surah-page', content: 'Halaman Surah Atau Ayat Pilihan', placement: 'bottom' },
+                { selector: '#first-tab', content: 'Lihat Senarai Surah', placement: 'bottom' },
+                { selector: '#second-tab', content: 'Lihat Senarai Surah Berdasarkan Juz', placement: 'bottom' },
+                { selector: '#third-tab', content: 'Lihat Senarai Ayat Pilihan Secara Keseluruhan', placement: 'bottom' },
+                { selector: '#viewSurah', content: 'Lihat Perincian Ayat Bagi Surah Ini', placement: 'bottom' },
+                { selector: '#info', content: 'Muat Turun Infografik Qalb-i', placement: 'top' },
+                { selector: '#linkedin', content: 'Lihat Profil Pengasas', placement: 'right-end' },
+                { selector: '#i1', content: 'Peta Laman', placement: 'bottom' },
+                { selector: '#i2', content: 'Pusat Bantuan', placement: 'bottom' },
+                { selector: '#i3', content: 'Dokumen Panduan', placement: 'bottom' },
+                { selector: '#i4', content: 'Terma Perkhidmatan', placement: 'bottom' },
+                { selector: '#i5', content: 'Dasar Privasi', placement: 'bottom' },
+                { selector: '#i6', content: 'Dasar Keselamatan', placement: 'bottom' },
+                { selector: '#i7', content: 'Penafian', placement: 'bottom' }
+            ];
+            tooltips5.forEach(({ selector, content, placement }) => {
+                tippy(selector, {
+                    content,
+                    placement
+                });
+            });
+        </script>
+    {% elif tag_page == 6 %}
+        <script src="static/script/typescript/zikir-section-function.js" defer></script>
+        <script>
+            const tooltips6 = [
+                { selector: '#main-page', content: 'Halaman Utama Qalb-i', placement: 'bottom' },
+                { selector: '#doa-page', content: 'Halaman Doa', placement: 'bottom' },
+                { selector: '#zikir-page', content: 'Halaman Zikir', placement: 'bottom' },
+                { selector: '#istighfar-page', content: 'Halaman Istighfar', placement: 'bottom' },
+                { selector: '#selawat-page', content: 'Halaman Selawat', placement: 'bottom' },
+                { selector: '#surah-page', content: 'Halaman Surah Atau Ayat Pilihan', placement: 'bottom' },
+                { selector: '#first-tab', content: 'Lihat Senarai Zikir', placement: 'bottom' },
+                { selector: '#viewZikir', content: 'Lihat Perincian Ayat Bagi Zikir Ini', placement: 'bottom' },
+                { selector: '#info', content: 'Muat Turun Infografik Qalb-i', placement: 'top' },
+                { selector: '#linkedin', content: 'Lihat Profil Pengasas', placement: 'right-end' },
+                { selector: '#i1', content: 'Peta Laman', placement: 'bottom' },
+                { selector: '#i2', content: 'Pusat Bantuan', placement: 'bottom' },
+                { selector: '#i3', content: 'Dokumen Panduan', placement: 'bottom' },
+                { selector: '#i4', content: 'Terma Perkhidmatan', placement: 'bottom' },
+                { selector: '#i5', content: 'Dasar Privasi', placement: 'bottom' },
+                { selector: '#i6', content: 'Dasar Keselamatan', placement: 'bottom' },
+                { selector: '#i7', content: 'Penafian', placement: 'bottom' }
+            ];
+            tooltips6.forEach(({ selector, content, placement }) => {
+                tippy(selector, {
+                    content,
+                    placement
+                });
+            });
+        </script>
+    {% endif %}

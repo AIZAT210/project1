@@ -1,0 +1,440 @@
+<!-- Initialization and Header Inclusion -->
+{% set expected_tag_page = 5 %}
+{% if expected_tag_page != tag_page %}
+    <script>
+        // Redirect to an error page using JavaScript if the condition is not met
+        window.location.href = '/error-display';
+    </script>
+{% endif %}
+{% include 'component/part.header-page.html' %}  
+<!-- Body Attributes -->
+<body oncontextmenu="return false;" class="d-flex flex-column min-vh-100 bg-white">
+    <!-- Menu -->
+    {% include 'component/part.menu-page.html' %} 
+    <!-- Section 1 -->
+    <div id="section1"><br><br><br>
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Terokai Keindahan Kalamullah</h1><br>
+        <p class="lead fs-2 text-start" data-aos="fade-up">Al-Quran merupakan <span class="fw-semibold">wahyu Allah SWT yang telah dikurniakan kepada Rasulullah SAW</span> bagi <span class="fw-semibold">memandu umat manusia ke jalan yang diredhai Allah SWT</span> sehingga Kiamat.</p><p></p>
+        <p class="lead fs-2 text-start" data-aos="fade-up">Kitab agung ini <span class="fw-semibold">mengandungi 6,236 ayat dan 114 surah</span>, merangkumi <span class="fw-semibold">panduan hidup, kisah para nabi, hukum-hukum, serta peringatan akhirat</span>.</p><br><br>
+        <div class="card" data-aos="zoom-in">
+            <img src="static/asset/image/aqwam-jembatan-ilmu-jTvT1OiBVNk-unsplash.jpg" draggable="false" class="card-img-top img-fluid rounded shadow pe-none img-bg" alt="Al-Quran_background" id="image-quran" name="image-quran" title="" aria-label="Al-Quran_background">
+        </div><br><br><br>
+    </div>
+    <!-- Section 2 -->
+    <div id="section2">
+        <h1 class="unique-text display-3 lead text-success1" data-aos="fade-up">Setiap Muslim Wajib Menyelami Isi Kandungannya Untuk Memahami Suruhan Dan Tegahan Allah SWT</h1><br>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Mendapat Pahala Berlipat Ganda</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">"Barang siapa yang membaca satu huruf dari Kitabullah (Al-Quran), maka baginya satu kebaikan, dan satu kebaikan itu digandakan menjadi sepuluh." (HR. Tirmizi)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Menenangkan Hati Dan Jiwa</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">Membaca ayat-ayat Al-Quran, terutama surah yang berkaitan dengan ketenangan seperti Surah Al-Insyirah dan Surah Ar-Ra'd ayat 28, dapat menghilangkan kegelisahan dan mendamaikan hati.</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Menjadi Syafaat Di Akhirat</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">"Bacalah Al-Quran, kerana ia akan datang pada hari kiamat sebagai pemberi syafaat bagi pembacanya." (HR. Muslim)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Perlindungan Daripada Gangguan Syaitan</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">Membaca Ayat Kursi (Surah Al-Baqarah: 255) sebelum tidur memberi perlindungan daripada gangguan syaitan sepanjang malam. Surah Al-Falaq & An-Nas pula melindungi dari kejahatan makhluk, sihir, dan mata jahat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Mempermudah Rezeki Dan Kejayaan</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">Surah Al-Waqiah sering dibaca untuk menarik rezeki dan menghindarkan kemiskinan. Surah Al-Kahfi pada hari Jumaat memberikan keberkatan dalam kehidupan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Menghapuskan Dosa-Dosa</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">Membaca Surah Al-Mulk setiap malam dapat memberi keampunan dan perlindungan dari azab kubur. Surah Al-Ikhlas jika dibaca sebanyak tiga kali menyamai pahala membaca seluruh Al-Quran.</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Memberi Cahaya Di Alam Kubur</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">Membaca Surah Yasin sebelum tidur atau untuk orang yang telah meninggal dunia boleh menjadi cahaya di alam kubur dan meringankan azab bagi ahli kubur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+                <div class="card h-100 card-bg">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Memperoleh Rahmat Dan Keberkatan</h5><p></p><hr>
+                        <p class="card-text lead text-success1 fw-semibold">Surah Al-Baqarah khususnya menghalau jin dan syaitan dari rumah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section 3 -->
+    <div id="section3">
+        <h2 class="fw-semibold text-success1" data-aos="fade-up">Mukjizat Al-Quran: Surah Dan Ayat Untuk Diamalkan<br><span class="unique-text display-3 text-success1" data-aos="fade-up">Panduan Hidup Muslim</span></h2><br><p></p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-up">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold fs-5 active" id="first-tab" name="first-tab" data-bs-toggle="tab" data-bs-target="#first-tab-pane" type="button" role="tab" aria-controls="first-tab-pane" aria-selected="true" tabindex="8">Susun Mengikut Surah</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold fs-5" id="second-tab" name="second-tab" data-bs-toggle="tab" data-bs-target="#second-tab-pane" type="button" role="tab" aria-controls="second-tab-pane" aria-selected="false" tabindex="9">Susun Mengikut Juz</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-semibold fs-5" id="third-tab" name="third-tab" data-bs-toggle="tab" data-bs-target="#third-tab-pane" type="button" role="tab" aria-controls="third-tab-pane" aria-selected="false" tabindex="10">Ayat Pilihan</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="first-tab-pane" role="tabpanel" aria-labelledby="first-tab"><br>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">Al-Faatiha</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">الفاتحة</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model1" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="11">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">Al-Kauthar</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">الكوثر</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model2" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="12">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">Al-Kaafiruun</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">الكافرون</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model3" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="13">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">An-Nasr</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">النصر</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model4" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="14">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">Al-Masad</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">المسد</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model5" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="15">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">Al-Ikhlaas</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">الإخلاص</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model6" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="16">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">Al-Falaq</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">الفلق</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model7" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="17">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in">
+                        <div class="card h-100 card-hover card-size">
+                            <div class="card-body text-center">
+                                <h4 class="card-text text-body-secondary">An-Naas</h4><p></p>
+                                <h1 class="card-text text-success1 fw-semibold display-3">الناس</h1><p></p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="d-grid gap-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#category-model8" type="button" class="btn btn-outline-success btn-lg fs-6 fw-semibold" name="viewSurah" id="viewSurah" title="" aria-label="Lihat Perincian Ayat" tabindex="18">Lihat Perincian Ayat</button><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="second-tab-pane" role="tabpanel" aria-labelledby="second-tab"><br>
+                <span class="text-secondary fs-5 fw-medium">AKAN DATANG</span>
+            </div>
+            <div class="tab-pane fade" id="third-tab-pane" role="tabpanel" aria-labelledby="third-tab"><br>
+                <span class="text-secondary fs-5 fw-medium">AKAN DATANG</span>
+            </div>
+        </div><br><p></p>
+        <!-- Modal Surah - Kategori 1 -->
+        <div class="modal fade" id="category-model1" tabindex="-1" aria-labelledby="category-model1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model1">Al-Faatiha (الفاتحة)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Segala puji tertentu bagi Allah, Tuhan yang memelihara dan mentadbirkan sekalian alam</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">مَـٰلِكِ يَوْمِ ٱلدِّينِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Yang Menguasai pemerintahan hari Pembalasan (hari Akhirat)</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Engkaulah sahaja (Ya Allah) Yang Kami sembah, dan kepada Engkaulah sahaja kami memohon pertolongan</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Tunjukilah kami jalan yang lurus</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Iaitu jalan orang-orang yang Engkau telah kurniakan nikmat kepada mereka, bukan (jalan) orang-orang yang Engkau telah murkai, dan bukan pula (jalan) orang-orang yang sesat</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 2 -->
+        <div class="modal fade" id="category-model2" tabindex="-1" aria-labelledby="category-model2" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model2">Al-Kauthar (الكوثر)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Sesungguhnya Kami telah mengurniakan kepadamu (wahai Muhammad) kebaikan yang banyak (di dunia dan di akhirat)</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">فَصَلِّ لِرَبِّكَ وَٱنْحَرْ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Oleh itu, kerjakanlah sembahyang kerana Tuhanmu semata-mata, dan sembelihlah korban (sebagai bersyukur)</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Sesungguhnya orang yang bencikan engkau, Dia lah yang terputus (dari mendapat sebarang perkara yang diingininya)</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 3 -->
+        <div class="modal fade" id="category-model3" tabindex="-1" aria-labelledby="category-model3" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model3">Al-Kaafiruun (الكافرون)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Katakanlah (wahai Muhammad): "Hai orang-orang kafir!</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">لَآ أَعْبُدُ مَا تَعْبُدُونَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Aku tidak akan menyembah apa yang kamu sembah</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan kamu tidak mahu menyembah (Allah) yang aku sembah</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan aku tidak akan beribadat secara kamu beribadat</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan kamu pula tidak mahu beribadat secara aku beribadat</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>لَكُمْ دِينُكُمْ وَلِىَ دِينِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Bagi kamu ugama kamu, dan bagiku ugamaku</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 4 -->
+        <div class="modal fade" id="category-model4" tabindex="-1" aria-labelledby="category-model4" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model4">An-Nasr (النصر)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Apabila datang pertolongan Allah dan kemenangan (semasa engkau wahai Muhammad berjaya menguasai negeri Makkah)</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًۭا</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan engkau melihat manusia masuk dalam ugama Allah beramai-ramai</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Maka ucapkanlah tasbih dengan memuji Tuhanmu dan mintalah ampun kepadaNya, sesungguhnya Dia amat menerima taubat</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 5 -->
+        <div class="modal fade" id="category-model5" tabindex="-1" aria-labelledby="category-model5" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model5">Al-Masad (المسد)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Binasalah kedua-dua tangan Abu lahab, dan binasalah ia bersama!</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Hartanya dan segala yang diusahakannya, tidak dapat menolongnya</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">سَيَصْلَىٰ نَارًۭا ذَاتَ لَهَبٍۢ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Ia akan menderita bakaran api neraka yang marak menjulang</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan juga isterinya, seorang perempuan pemunggah kayu api</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>فِى جِيدِهَا حَبْلٌۭ مِّن مَّسَدٍۭ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Di lehernya sejenis tali, dari tali-tali yang dipintal</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 6 -->
+        <div class="modal fade" id="category-model6" tabindex="-1" aria-labelledby="category-model6" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model6">Al-Ikhlaas (الإخلاص)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">قُلْ هُوَ ٱللَّهُ أَحَدٌ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Katakanlah (wahai Muhammad): "(Tuhanku) ialah Allah Yang Maha Esa</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">ٱللَّهُ ٱلصَّمَدُ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Allah Yang menjadi tumpuan sekalian makhluk untuk memohon sebarang hajat</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">لَمْ يَلِدْ وَلَمْ يُولَدْ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Ia tiada beranak, dan Ia pula tidak diperanakkan</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan tidak ada sesiapapun yang serupa denganNya</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 7 -->
+        <div class="modal fade" id="category-model7" tabindex="-1" aria-labelledby="category-model7" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model7">Al-Falaq (الفلق)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Katakanlah (wahai Muhammad); "Aku berlindung kepada (Allah) Tuhan yang menciptakan sekalian makhluk</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">مِن شَرِّ مَا خَلَقَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dari bencana makhluk-makhluk yang Ia ciptakan</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan dari bahaya gelap apabila ia masuk</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan dari kejahatan makhluk-makhluk yang menghembus-hembus pada simpulan-simpulan (dan ikatan-ikatan)</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dan dari kejahatan orang yang dengki apabila ia melakukan dengkinya</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Surah - Kategori 8 -->
+        <div class="modal fade" id="category-model8" tabindex="-1" aria-labelledby="category-model8" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-semibold text-white" id="category-model8">An-Naas (الناس)</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <br><h1 class="text-success1 fw-semibold text-center">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Katakanlah (wahai Muhammad): "Aku berlindung kepada (Allah) Pemulihara sekalian manusia</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">مَلِكِ ٱلنَّاسِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Yang Menguasai sekalian manusia</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">إِلَـٰهِ ٱلنَّاسِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Tuhan yang berhak disembah oleh sekalian manusia</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Dari kejahatan pembisik penghasut yang timbul tenggelam</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center">ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">Yang melemparkan bisikan dan hasutannya ke dalam hati manusia</h5><br><p></p><hr>
+                        <br><h1 class="text-success1 fw-semibold text-center"َ>مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ</h1><p></p>
+                        <h5 class="text-success1 fw-medium text-center">(Iaitu pembisik dan penghasut) dari kalangan jin dan manusia</h5><br><p></p><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section 4 -->
+    <div id="section4"><br><hr><br><br>
+        <div class="text-center fw-medium fs-6">
+            <a id="info" name="info" class="title text-decoration-none" href="static/asset/doc/user_manual.pdf" title="" aria-label="Sila muat turun Infografik Sistem (Ringkasan)" tabindex="19" rel="noopener noreferrer" target="_self" download="user_manual.pdf">Infografik Qalb-i</a><br>
+            <p id="copyrightText" class="mt-3 mb-3">Qalb-i Versi 1.0.0 Beta | Kemaskini terakhir: April 2025<p></p>Hak Cipta Terpelihara &copy; <span id="copyYear"></span> Muhammad Aizat Bin Rasee, <a href="https://www.linkedin.com/in/muhammad-aizat-bin-rasee-58435b178/" class="text-decoration-none" id="linkedin" name="linkedin" tabindex="20" title="" aria-label="Lihat profil pengasas di LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a><p></p>Founder and Fullstack Software Developer of Qalb-i</p>   
+            <p id="copyrightText" class="mt-3 mb-3">
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i1" name="i1" title="" aria-label="Peta Laman" tabindex="21" rel="noopener noreferrer" target="_blank">Peta Laman</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i2" name="i2" title="" aria-label="Pusat Bantuan" tabindex="22" rel="noopener noreferrer" target="_blank">Pusat Bantuan</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i3" name="i3" title="" aria-label="Dokumen Panduan" tabindex="23" rel="noopener noreferrer" target="_blank">Dokumen Panduan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i4" name="i4" title="" aria-label="Terma Perkhidmatan" tabindex="24" rel="noopener noreferrer" target="_blank">Terma Perkhidmatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i5" name="i5" title="" aria-label="Dasar Privasi" tabindex="25" rel="noopener noreferrer" target="_blank">Dasar Privasi</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i6" name="i6" title="" aria-label="Dasar Keselamatan" tabindex="26" rel="noopener noreferrer" target="_blank">Dasar Keselamatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i7" name="i7" title="" aria-label="Penafian" tabindex="27" rel="noopener noreferrer" target="_blank">Penafian</a>
+            </p><br>
+            <p id="copyrightText">Untuk pengalaman paparan terbaik, gunakan resolusi skrin minimum 1920x1080 pada pelayar web Mozilla Firefox, Microsoft Edge, atau Google Chrome versi terkini.</p><br>        
+        </div> 
+    </div>
+    <!-- Footer Inclusion -->
+    {% include 'component/part.footer-page.html' %}
+</body>
+</html>

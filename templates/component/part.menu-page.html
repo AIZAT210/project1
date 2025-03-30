@@ -1,0 +1,53 @@
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold title-project animate__animated animate__pulse animate__infinite" href="{{ url_for('index1') }}" tabindex="1" target="_self" id="main-page" name="main-page" title="" aria-lable="Halaman Utama" rel="noopener noreferrer">Qalb-i</a><br>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" tabindex="2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+                <!-- Doa page -->
+                <li class="nav-item">
+                    {% if tag_page == 2 %}
+                        <a class="nav-link active fw-bold text-success" aria-current="page" href="{{ url_for('doa_section') }}" tabindex="3" target="_self" id="doa-page" name="doa-page" title="" aria-lable="Halaman Doa" rel="noopener noreferrer">Doa</a>
+                    {% else %}
+                        <a class="nav-link fw-bold" aria-current="page" href="{{ url_for('doa_section') }}" tabindex="3" target="_self" id="doa-page" name="doa-page" title="" aria-lable="Halaman Doa" rel="noopener noreferrer">Doa</a>
+                    {% endif %}
+                </li>
+                <!-- Zikir page -->
+                <li class="nav-item">
+                    {% if tag_page == 6 %}
+                        <a class="nav-link active fw-bold text-success" aria-current="page" href="{{ url_for('zikir_section') }}" tabindex="4" target="_self" id="zikir-page" name="zikir-page" title="" aria-lable="Halaman Zikir" rel="noopener noreferrer">Zikir</a>
+                    {% else %}
+                        <a class="nav-link fw-bold" aria-current="page" href="{{ url_for('zikir_section') }}" tabindex="4" target="_self" id="zikir-page" name="zikir-page" title="" aria-lable="Halaman Zikir" rel="noopener noreferrer">Zikir</a>
+                    {% endif %}
+                </li>
+                <!-- Istighfar page -->
+                <li class="nav-item">
+                    {% if tag_page == 3 %}
+                        <a class="nav-link active fw-bold text-success" aria-current="page" href="{{ url_for('istighfar_section') }}" tabindex="5" target="_self" id="istighfar-page" name="istighfar-page" title="" aria-lable="Halaman Istighfar" rel="noopener noreferrer">Istighfar</a>
+                    {% else %}
+                        <a class="nav-link fw-bold" aria-current="page" href="{{ url_for('istighfar_section') }}" tabindex="5" target="_self" id="istighfar-page" name="istighfar-page" title="" aria-lable="Halaman Istighfar" rel="noopener noreferrer">Istighfar</a>
+                    {% endif %}
+                </li>
+                <!-- Selawat page -->
+                <li class="nav-item">            
+                    {% if tag_page == 4 %}
+                        <a class="nav-link active fw-bold text-success" aria-current="page" href="{{ url_for('selawat_section') }}" tabindex="6" target="_self" id="selawat-page" name="selawat-page" title="" aria-lable="Halaman Selawat" rel="noopener noreferrer">Selawat</a>
+                    {% else %}
+                        <a class="nav-link fw-bold" aria-current="page" href="{{ url_for('selawat_section') }}" tabindex="6" target="_self" id="selawat-page" name="selawat-page" title="" aria-lable="Halaman Selawat" rel="noopener noreferrer">Selawat</a>
+                    {% endif %}
+                </li>
+                <!-- Surah Pilihan page -->
+                <li class="nav-item">
+                    {% if tag_page == 5 %}
+                        <a class="nav-link active fw-bold text-success" aria-current="page" href="{{ url_for('surah_section') }}" tabindex="7" target="_self" id="surah-page" name="surah-page" title="" aria-lable="Halaman Surah" rel="noopener noreferrer">Surah</a>
+                    {% else %}
+                        <a class="nav-link fw-bold" aria-current="page" href="{{ url_for('surah_section') }}" tabindex="7" target="_self" id="surah-page" name="surah-page" title="" aria-lable="Halaman Surah" rel="noopener noreferrer">Surah</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

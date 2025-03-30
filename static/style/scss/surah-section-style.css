@@ -1,0 +1,88 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Cormorant+Garamond:wght@700&display=swap");
+/* Variables */
+/* Mixins */
+/* Global Styles */
+html, body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #F9F8EB;
+}
+
+/* Scrollbar Customization */
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.6em;
+  background-color: #dcdde1;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #CBA35C;
+  border-radius: 2.5em;
+}
+
+/* Project Title */
+.title-project {
+  color: #076452;
+  text-shadow: 2px 2px 5px #ffcc01;
+}
+
+/* Sections */
+#section1 {
+  padding: 4em;
+}
+
+#section2 {
+  padding: 4em;
+}
+
+#section3 {
+  padding: 4em;
+}
+
+#section4 {
+  padding: 4em;
+}
+
+#section4 {
+  padding: 2em;
+}
+
+/* Modal Styles */
+.modal-header {
+  background-color: #00712D;
+}
+
+/* Text Styles */
+.text-success1 {
+  color: #0F693F;
+}
+
+.unique-text {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Card Styling */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-bg {
+  background-color: #F9F8EB;
+}
+
+.card-footer {
+  background-color: #DFF3E3;
+}/*# sourceMappingURL=surah-section-style.css.map */

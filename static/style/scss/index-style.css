@@ -1,0 +1,125 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Cormorant+Garamond:wght@700&display=swap");
+/* Variables */
+/* Mixins */
+/* Global Styles */
+html, body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #F9F8EB;
+}
+
+/* Scrollbar Customization */
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.6em;
+  background-color: #dcdde1;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #CBA35C;
+  border-radius: 2.5em;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #00712D;
+}
+
+/* Project Title */
+.title-project {
+  color: #076452;
+  text-shadow: 2px 2px 5px #ffcc01;
+}
+
+/* Sections */
+#section1 {
+  padding: 4em;
+}
+
+#section2 {
+  padding: 4em;
+}
+
+#section3 {
+  padding: 4em;
+}
+
+#section5 {
+  padding: 4em;
+}
+
+#section6 {
+  padding: 4em;
+}
+
+#section7 {
+  padding: 4em;
+}
+
+#section8 {
+  padding: 4em;
+}
+
+#section9 {
+  padding: 4em;
+}
+
+#section10 {
+  padding: 4em;
+}
+
+#section10 {
+  padding: 2em;
+}
+
+#section5 {
+  background-color: #00712D;
+}
+
+/* Text Styles */
+.text-success1 {
+  color: #0F693F;
+}
+
+.unique-text {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Image Styling */
+#bg-image1 {
+  background: url(/static/asset/image/4826424.jpg) right bottom no-repeat, url(/static/asset/image/4826424.jpg) left top repeat;
+  padding: 50px;
+  height: 150px;
+  pointer-events: none;
+}
+
+/* Icon Styling */
+.custom-icon {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(96%) saturate(387%) hue-rotate(100deg) brightness(92%) contrast(93%);
+}
+
+.custom-icon-link {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(2564%) hue-rotate(211deg) brightness(100%) contrast(99%);
+}
+
+/* Card Styling */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-footer {
+  background-color: #DFF3E3;
+}/*# sourceMappingURL=index-style.css.map */

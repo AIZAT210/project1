@@ -1,0 +1,273 @@
+<!-- Initialization and Header Inclusion -->
+{% set expected_tag_page = 1 %}
+{% if expected_tag_page != tag_page %}
+    <script>
+        // Redirect to an error page using JavaScript if the condition is not met
+        window.location.href = '/error-display';
+    </script>
+{% endif %}
+{% include 'component/part.header-page.html' %}  
+<!-- Body Attributes -->
+<body oncontextmenu="return false;" class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top custom-navbar"><p></p></nav>
+    <!-- Section 1 -->
+    <div id="section1">
+        <div class="text-center">
+            <img draggable="false" class="pe-none" src="static/asset/image/10521273.png" alt="Qalb-i Malaysia" id="logo-Qalb-i" name="logo-Qalb-i" title="" aria-label="Logo Qalb-i Malaysia" width="300" height="300">
+            <h1 class="fw-bold display-2 title-project animate__animated animate__pulse animate__infinite">Qalb-i</h1><p></p>
+            <p class="lead fs-3 text-body-secondary fw-medium">"Dekat Di Hati, Mudah Diamalkan"</p><br>
+        </div>
+        <h4 class="text-success1 text-start">Platform interaktif yang menghimpunkan <span class="fw-bold">Doa</span>, <span class="fw-bold">Zikir</span>, <span class="fw-bold">Istighfar</span>, <span class="fw-bold">Selawat</span>, dan <span class="fw-bold">Surah Pilihan</span> untuk membantu anda memperkukuhkan amalan harian dengan lebih mudah dan bermakna.</h4><br>
+        <div class="text-center">
+            <img draggable="false" class="custom-icon animate__animated animate__flash animate__infinite" src="static/asset/image/chevrons-down-solid-36.png" alt="Bacaan Penuh Tentang Qalb-i Malaysia" id="chevrons-icon" name="chevrons-icon" title="" aria-label="Bacaan Penuh Tentang Qalb-i Malaysia" tabindex="1">
+        </div><p></p>
+    </div>
+    <!-- Section 2 -->
+    <div id="section2" class="bg-white" data-aos="fade-up">
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Kenapa Qalb-i?</h1><br>
+        <p class="lead fs-2 text-start" data-aos="fade-up">"Melalui Qalb-i, anda bukan sahaja dapat <span class="fw-semibold">mempelajari bacaan penting</span>, tetapi juga memahami <span class="fw-semibold">kepentingan di sebalik setiap amalan</span>. Jadikan Qalb-i sebagai <span class="fw-semibold">panduan rohani anda</span> untuk mendekatkan diri kepada Allah SWT dalam setiap langkah kehidupan."</p><br>
+        <a href="#bg-image1" type="button" id="intro" name="intro" class="btn btn-success btn-lg text-decoration-none" title="" aria-label="Bacaan Penuh Tentang Qalb-i Malaysia" rel="noopener noreferrer" tabindex="2" data-aos="fade-up">Jelajahi Sekarang</a>
+    </div>
+    <!-- Section 3 -->
+    <div id="section3" class="bg-white">
+        <div class="d-flex align-items-center gap-2" data-aos="fade-up">
+            <h1 class="unique-text display-3">Kalam Hikmah</h1>
+            <img draggable="false" class="pe-none" src="static/asset/image/46345654.jpg" alt="Kalam Hikmah" id="logo-Kalam-Hikmah" name="logo-Kalam-Hikmah" width="120" height="60" title="" aria-label="Logo Kalam Hikmah">
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Sesungguhnya dengan mengingati Allah, hati akan menjadi tenang."<p></p><span class="lead fw-medium">(Surah Ar-Ra’d: 28)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Barang siapa yang berjalan di atas jalan untuk mencari ilmu, Allah akan permudahkan jalannya ke syurga."<p></p><span class="lead fw-medium">(Hadis Riwayat Muslim)</span></p>
+            </div>
+        </div><br>
+        <div class="card border-success" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-body">
+                <p class="lead text-success1 fw-semibold fs-4">"Jika Allah menginginkan kebaikan pada seseorang, Dia akan memberikannya kefahaman dalam agama."<p></p><span class="lead fw-medium">(Hadis Riwayat Bukhari & Muslim)</span></p>
+            </div>
+        </div><br>
+    </div>
+    <!-- Section 4 -->
+    <div id="section4" data-aos="fade-right">
+        <div id="bg-image1"></div>
+    </div>
+    <!-- Section 5 -->
+    <div id="section5" data-aos="fade-up">
+        <h1 class="fw-bold display-5 text-white" data-aos="fade-up">Jom Beramal!</h1>
+        <p class="lead fw-semibold text-white fs-4" data-aos="fade-up">"Mulakan Dengan Langkah Kecil, Untuk Capai Keberkatan Besar"</p><br>
+        <p class="lead fs-2 text-white fw-medium text-start" data-aos="fade-up">Tingkatkan amalan rohani anda dengan panduan mudah dan berstruktur di Qalb-i. Pilih amalan, fahami maknanya, dan mulakan perjalanan menuju keberkatan hari ini.</p><br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-aos="zoom-in">
+                <div class="card h-100 text-center card-hover">
+                    <div class="card-body">
+                        <h5 class="card-text text-body-secondary text-start">Kategori 1</h5>
+                        <img draggable="false" class="pe-none img-fluid" src="static/asset/image/prayer_times.png" alt="logo-doa-section" id="logo-doa-section" name="logo-doa-section" title="" aria-label="logo-doa-section"><p></p>
+                        <h2 class="card-title fw-bold">Doa</h2><p></p>
+                        <h5 class="card-text">Permohonan atau pengharapan seorang hamba kepada Allah SWT</h5><p></p>          
+                    </div>
+                    <a href="{{ url_for('doa_section') }}" class="text-decoration-none" target="_self" id="link-doa-section" name="link-doa-section" title="" aria-label="Pengenalan Doa" rel="noopener noreferrer">
+                        <div class="card-footer" id="doa-section" tabindex="3"><p></p>
+                            <p class="fs-5 fw-semibold">Mula Mengaji</p><p></p> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+                <div class="card h-100 text-center card-hover">
+                    <div class="card-body">
+                        <h5 class="card-text text-body-secondary text-start">Kategori 2</h5>
+                        <img draggable="false" class="pe-none img-fluid" src="static/asset/image/prayer_times.png" alt="logo-zikir-section" id="logo-zikir-section" name="logo-zikir-section" title="" aria-label="logo-zikir-section"><p></p>
+                        <h2 class="card-title fw-bold">Zikir</h2><p></p>
+                        <h5 class="card-text">Mengingati Allah SWT melalui ucapan atau perbuatan yang memuji-Nya</h5><p></p>         
+                    </div>
+                    <a href="{{ url_for('zikir_section') }}" class="text-decoration-none" target="_self" id="link-zikir-section" name="link-zikir-section" title="" aria-label="Pengenalan Zikir" rel="noopener noreferrer">
+                        <div class="card-footer" id="zikir-section" tabindex="4"><p></p>
+                            <p class="fs-5 fw-semibold">Mula Mengaji</p><p></p> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+                <div class="card h-100 text-center card-hover">
+                    <div class="card-body">
+                        <h5 class="card-text text-body-secondary text-start">Kategori 3</h5>
+                        <img draggable="false" class="pe-none img-fluid" src="static/asset/image/prayer_times.png" alt="logo-istighfar-section" id="logo-istighfar-section" name="logo-istighfar-section" title="" aria-label="logo-istighfar-section"><p></p>
+                        <h2 class="card-title fw-bold">Istighfar</h2><p></p>
+                        <h5 class="card-text">Memohon keampunan daripada Allah SWT atas dosa dan kesilapan yang dilakukan</h5><p></p>           
+                    </div>
+                    <a href="{{ url_for('istighfar_section') }}" class="text-decoration-none" target="_self" id="link-istighfar-section" name="link-istighfar-section" title="" aria-label="Pengenalan Istighfar" rel="noopener noreferrer">
+                        <div class="card-footer" id="istighfar-section" tabindex="5"><p></p>
+                            <p class="fs-5 fw-semibold">Mula Mengaji</p><p></p> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+                <div class="card h-100 text-center card-hover">
+                    <div class="card-body">
+                        <h5 class="card-text text-body-secondary text-start">Kategori 4</h5>
+                        <img draggable="false" class="pe-none img-fluid" src="static/asset/image/prayer_times.png" alt="logo-selawat-section" id="logo-selawat-section" name="logo-selawat-section" title="" aria-label="logo-selawat-section"><p></p>
+                        <h2 class="card-title fw-bold">Selawat</h2><p></p>
+                        <h5 class="card-text">Ucapan selamat dan doa ke atas Nabi Muhammad SAW sebagai tanda cinta dan penghormatan kepada baginda</h5><p></p>        
+                    </div>
+                    <a href="{{ url_for('selawat_section') }}" class="text-decoration-none" target="_self" id="link-selawat-section" name="link-selawat-section" title="" aria-label="Pengenalan Selawat" rel="noopener noreferrer">
+                        <div class="card-footer" id="selawat-section" tabindex="6"><p></p>
+                            <p class="fs-5 fw-semibold">Mula Mengaji</p><p></p> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+                <div class="card h-100 text-center card-hover">
+                    <div class="card-body">
+                        <h5 class="card-text text-body-secondary text-start">Kategori 5</h5>
+                        <img draggable="false" class="pe-none img-fluid" src="static/asset/image/prayer_times.png" alt="logo-surah-section" id="logo-surah-section" name="logo-surah-section" title="" aria-label="logo-surah-section"><p></p>
+                        <h2 class="card-title fw-bold">Surah Pilihan</h2><p></p>
+                        <h5 class="card-text">Surah atau ayat tertentu dalam Al-Quran yang mempunyai kelebihan istimewa</h5><p></p>       
+                    </div>
+                    <a href="{{ url_for('surah_section') }}" class="text-decoration-none" target="_self" id="link-surah-section" name="link-surah-section" title="" aria-label="Pengenalan Surah Atau Ayat Pilihan" rel="noopener noreferrer">
+                        <div class="card-footer" id="surah-section" tabindex="7"><p></p>
+                            <p class="fs-5 fw-semibold">Mula Mengaji</p><p></p>  
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><br>
+    </div>
+    <!-- Section 6 -->
+    <div id="section6" data-aos="fade-up">
+        <h3 class="fw-bold text-success1" data-aos="fade-up">Jadikan Qalb-i Sebagai</h3>
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Sahabat Rohani Anda</h1><br>
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-body-tertiary rounded p-3 me-3" data-aos="zoom-in">
+                            <img draggable="false" class="pe-none" src="static/asset/image/folder-regular-24.png" alt="Feature-Qalb-i1" id="Feature-Qalb-i1" name="Feature-Qalb-i1" title="" aria-label="Feature-Qalb-i1">
+                        </div>
+                        <div data-aos="fade-up">
+                            <h4 class="fw-bold">Himpunan Lengkap Dan Berstruktur</h4>
+                            <p class="lead text-body-secondary fw-medium">Doa, Zikir, Istighfar, Selawat, dan Surah Pilihan disusun secara teratur mengikut kategori untuk kemudahan navigasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-body-tertiary rounded p-3 me-3" data-aos="zoom-in">
+                            <img draggable="false" class="pe-none" src="static/asset/image/block-regular-24.png" alt="Feature-Qalb-i2" id="Feature-Qalb-i2" name="Feature-Qalb-i2" title="" aria-label="Feature-Qalb-i2">
+                        </div>
+                        <div data-aos="fade-up">
+                            <h4 class="fw-bold">Akses Percuma Dan Tanpa Iklan</h4>
+                            <p class="lead text-body-secondary fw-medium">Nikmati kandungan lengkap tanpa sebarang gangguan iklan atau bayaran tersembunyi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-body-tertiary rounded p-3 me-3" data-aos="zoom-in">
+                            <img draggable="false" class="pe-none" src="static/asset/image/book-alt-regular-24.png" alt="Feature-Qalb-i3" id="Feature-Qalb-i3" name="Feature-Qalb-i3" title="" aria-label="Feature-Qalb-i3">
+                        </div>
+                        <div data-aos="fade-up">
+                            <h4 class="fw-bold">Rujukan Sahih Dan Dipercayai</h4>
+                            <p class="lead text-body-secondary fw-medium">Semua kandungan berpandukan sumber autentik seperti Al-Quran, Hadis, laman rasmi majlis agama dan kitab rujukan untuk memastikan ketepatan dan keaslian ilmu yang disampaikan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-body-tertiary rounded p-3 me-3" data-aos="zoom-in">
+                            <img draggable="false" class="pe-none" src="static/asset/image/mobile-alt-regular-24.png" alt="Feature-Qalb-i4" id="Feature-Qalb-i4" name="Feature-Qalb-i4" title="" aria-label="Feature-Qalb-i4">
+                        </div>
+                        <div data-aos="fade-up">
+                            <h4 class="fw-bold">Mesra Peranti Dan Pengguna</h4>
+                            <p class="lead text-body-secondary fw-medium">Reka bentuk responsif dan intuitif yang mudah diakses oleh semua peringkat umur di pelbagai peranti seperti telefon pintar, tablet, laptop dan komputer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <p class="lead fs-3 text-body-secondary fw-medium text-center" data-aos="fade-up">"Bimbingan Rohani, Sepanjang Masa"</p>
+    </div>
+    <!-- Section 7 -->
+    <div id="section7">
+        <h3 class="unique-text display-3" data-aos="fade-up">Prasyarat Menuntut Ilmu</h3><br>
+        <div data-aos="fade-up">
+            <h2 class="text-success1 fw-semibold">1. Guru pembimbing yang berkeahlian</h2><hr>
+        </div>
+        <div data-aos="fade-up">
+            <h2 class="text-success1 fw-semibold">2. Akal yang cerdas</h2><hr>
+        </div>
+        <div data-aos="fade-up">
+            <h2 class="text-success1 fw-semibold">3. Kitab dan rujukan yang betul dan sahih</h2><hr>
+        </div>
+        <div data-aos="fade-up">
+            <h2 class="text-success1 fw-semibold">4. Konsisten dan bersungguh-sungguh dalam menuntut</h2>
+        </div><br><br>
+        <blockquote class="blockquote mb-0" data-aos="fade-up">
+            <footer class="blockquote-footer text-body-secondary fs-4 fw-medium">Al-Fawaid al-Makkiyyah oleh Imam 'Alawi bin Ahmad al-Saqqaf</footer>
+        </blockquote><br>
+    </div>
+    <!-- Section 8 -->
+    <div id="section8" class="bg-white" data-aos="fade-up">
+        <h1 class="fw-bold display-5 text-success1" data-aos="fade-up">Ibadah: Kunci Ketenangan Dan Kejayaan</h1><br><br>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12 mb-2 mb-lg-0" data-aos="fade-up">
+                <p class="fw-medium text-start fs-5">Ibadah merupakan amalan utama dalam kehidupan seorang Muslim yang mencerminkan ketaatan dan penghambaan kepada Allah SWT. Ia merangkumi segala perbuatan, ucapan, dan niat yang dilakukan dengan ikhlas semata-mata kerana Allah SWT.</p>
+                <p class="fw-medium text-start fs-5">Ibadah tidak hanya terbatas kepada solat, puasa, zakat, dan haji, tetapi turut mencakupi setiap aspek kehidupan, termasuk berzikir, berdoa, berselawat, serta berbuat baik kepada sesama manusia. Dengan memahami dan mengamalkan ibadah secara konsisten, ia bukan sahaja membentuk keperibadian yang mulia, tetapi juga menjadi panduan menuju kejayaan di dunia serta kebahagiaan hakiki di akhirat.</p>
+            </div>   
+            <div class="col-lg-6 col-12 text-center text-lg-end" data-aos="zoom-in">
+                <img draggable="false" class="img-fluid rounded shadow pe-none" src="static/asset/image/572154.jpg" alt="Gambar Masjid Di Malaysia" id="image-mosque" name="image-mosque" title="" aria-label="Gambar Masjid Di Malaysia">
+            </div>
+        </div>
+    </div>
+    <!-- Section 9 -->
+    <div id="section9" class="bg-white">
+        <h3 class="unique-text display-3 text-success1 text-center" data-aos="fade-up">Inspirasi Dan Rujukan Terpercaya</h3><br>
+        <p class="lead fs-4 text-body-secondary fw-medium text-center" data-aos="fade-up">Agar Setiap Ilmu Yang Dikongsi Dapat Membawa Manfaat Dan Memberi Pengalaman Pengguna Terbaik, Kami Berpandukan Rujukan Yang Diyakini!</p><br>
+        <div class="card mb-3" data-aos="zoom-in">
+            <img src="static/asset/image/Pejabat-Mufti-Wilayah-Persekutuan-Utama-03-19-2025_03_32_AM.png" draggable="false" class="card-img-top img-fluid pe-none" alt="Inspirasi 1 - Laman Web Rasmi Mufti Wilayah Persekutuan" id="image-mosque" name="image-mosque" title="" aria-label="Inspirasi 1 - Laman Web Rasmi Mufti Wilayah Persekutuan">
+            <div class="card-body"><br>
+                <h4 class="card-title fw-bold text-primary"><a href="https://muftiwp.gov.my/ms/" class="text-decoration-none" id="Inspiration1" name="Inspiration1" tabindex="8" title="" aria-label="Lawari Inspirasi 1" rel="noopener noreferrer" target="_blank"><img draggable="false" class="pe-none custom-icon-link" src="static/asset/image/link-alt-regular-24.png" alt="Link-image" id="Link-image" name="Link-image" title="" aria-label="Link-image"></a> Laman Web Rasmi Mufti Wilayah Persekutuan</h4>
+                <h5 class="card-text fw-medium">Sumber rujukan utama bagi memastikan setiap amalan berpandukan dalil yang sahih, fatwa terkini, serta panduan hukum yang diiktiraf.</h5><p></p>
+            </div>
+        </div><br>
+        <div class="card mb-3" data-aos="zoom-in">
+            <img src="static/asset/image/-Waktu-Solat-Malaysia-03-19-2025_03_32_AM.png" draggable="false" class="card-img-top img-fluid pe-none" alt="Inspirasi 2 - Laman Web Rasmi Waktu Solat Digital" id="image-mosque" name="image-mosque" title="" aria-label="Inspirasi 2 - Laman Web Rasmi Waktu Solat Digital">
+            <div class="card-body"><br>
+                <h4 class="card-title fw-bold text-primary"><a href="https://www.waktusolat.digital/" class="text-decoration-none" id="Inspiration2" name="Inspiration2" tabindex="9" title="" aria-label="Lawari Inspirasi 2" rel="noopener noreferrer" target="_blank"><img draggable="false" class="pe-none custom-icon-link" src="static/asset/image/link-alt-regular-24.png" alt="Link-image" id="Link-image" name="Link-image" title="" aria-label="Link-image"></a> Laman Web Rasmi Waktu Solat Digital</h4>
+                <h5 class="card-text fw-medium">Sumber inspirasi dalam merangka susun atur yang ringkas, jelas, dan mesra pengguna bagi memastikan pengalaman navigasi yang lancar dan efisien.</h5><p></p>
+            </div>
+        </div><br>
+        <div class="card mb-3" data-aos="zoom-in">
+            <img src="static/asset/image/Indahnya-Hidup-Bersyariat-Edisi-Kemaskini-HARD-COVER-TBBK1097A--03-19-2025_03_31_AM.png" draggable="false" class="card-img-top img-fluid pe-none" alt="Inspirasi 3 - Buku Indahnya Hidup Bersyariat" id="image-mosque" name="image-mosque" title="" aria-label="Inspirasi 3 - Buku Indahnya Hidup Bersyariat">
+            <div class="card-body"><br>
+                <h4 class="card-title fw-bold text-primary"><a href="https://telagabiru.com.my/products/indahnya-hidup-bersyariat-9c43da95-e044-4173-806b-319e2cf828ae?srsltid=AfmBOoqfhZ5rJsrRjnFQue6h2_wVqoH_VhZiZjWnaSult14cWgYRhv7Y" class="text-decoration-none" id="Inspiration3" name="Inspiration3" tabindex="10" title="" aria-label="Lawari Inspirasi 3" rel="noopener noreferrer" target="_blank"><img draggable="false" class="pe-none custom-icon-link" src="static/asset/image/link-alt-regular-24.png" alt="Link-image" id="Link-image" name="Link-image" title="" aria-label="Link-image"></a> Buku Indahnya Hidup Bersyariat</h4>
+                <h5 class="card-text fw-medium">Sebuah panduan komprehensif yang memperincikan amalan harian seorang Muslim yang menjadi rujukan dalam memahami ibadah dengan lebih mendalam dan berlandaskan syariat.</h5><p></p>
+            </div>
+        </div><br>
+    </div>
+    <!-- Section 10 -->
+    <div id="section10" class="bg-white"><br><hr><br><br>
+        <div class="text-center fw-medium fs-6">
+            <a id="info" name="info" class="title text-decoration-none" href="static/asset/doc/user_manual.pdf" title="" aria-label="Sila muat turun Infografik Sistem (Ringkasan)" tabindex="11" rel="noopener noreferrer" target="_self" download="user_manual.pdf">Infografik Qalb-i</a><br>
+            <p id="copyrightText" class="mt-3 mb-3">Qalb-i Versi 1.0.0 Beta | Kemaskini terakhir: April 2025<p></p>Hak Cipta Terpelihara &copy; <span id="copyYear"></span> Muhammad Aizat Bin Rasee, <a href="https://www.linkedin.com/in/muhammad-aizat-bin-rasee-58435b178/" class="text-decoration-none" id="linkedin" name="linkedin" tabindex="12" title="" aria-label="Lihat profil pengasas di LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a><p></p>Founder and Fullstack Software Developer of Qalb-i</p>   
+            <p id="copyrightText" class="mt-3 mb-3">
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i1" name="i1" title="" aria-label="Peta Laman" tabindex="13" rel="noopener noreferrer" target="_blank">Peta Laman</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i2" name="i2" title="" aria-label="Pusat Bantuan" tabindex="14" rel="noopener noreferrer" target="_blank">Pusat Bantuan</a> . 
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i3" name="i3" title="" aria-label="Dokumen Panduan" tabindex="15" rel="noopener noreferrer" target="_blank">Dokumen Panduan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i4" name="i4" title="" aria-label="Terma Perkhidmatan" tabindex="16" rel="noopener noreferrer" target="_blank">Terma Perkhidmatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i5" name="i5" title="" aria-label="Dasar Privasi" tabindex="17" rel="noopener noreferrer" target="_blank">Dasar Privasi</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i6" name="i6" title="" aria-label="Dasar Keselamatan" tabindex="18" rel="noopener noreferrer" target="_blank">Dasar Keselamatan</a> .
+                <a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#" id="i7" name="i7" title="" aria-label="Penafian" tabindex="19" rel="noopener noreferrer" target="_blank">Penafian</a>
+            </p><br>
+            <p id="copyrightText">Untuk pengalaman paparan terbaik, gunakan resolusi skrin minimum 1920x1080 pada pelayar web Mozilla Firefox, Microsoft Edge, atau Google Chrome versi terkini.</p><br>        
+        </div> 
+    </div>
+    <!-- Footer Inclusion -->
+    {% include 'component/part.footer-page.html' %}
+</body>
+</html>
